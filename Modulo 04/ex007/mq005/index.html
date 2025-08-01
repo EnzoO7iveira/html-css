@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Hamburguer</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTam()"> 
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i class="bi bi-list" id="icon" onclick="clickMenu()"></i>
+        <menu id="menu">
             <ul>
                 <li><a href="#">Opção Um</a></li>
                 <li><a href="#">Opção Dois</a></li>
@@ -35,5 +38,22 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illo nulla at totam ipsum distinctio sapiente eligendi incidunt commodi ratione perspiciatis necessitatibus non? Doloribus sed voluptate dicta amet qui consectetur quidem, mollitia, ratione voluptatibus officia eveniet quia, minus modi laboriosam. Eligendi soluta rem nostrum sapiente, ex hic eius accusamus, est commodi nisi ratione rerum. Iusto odit repellendus voluptate, omnis eaque ducimus, quas laborum dolorem laboriosam saepe delectus magni optio aspernatur tenetur illum eveniet reprehenderit nobis fuga veritatis in, nam quisquam. Earum, debitis.</p>
         </article>
     </main>
+    <script>
+        function mudouTam(){
+            if(window.innerWidth >= 768){
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } else  {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

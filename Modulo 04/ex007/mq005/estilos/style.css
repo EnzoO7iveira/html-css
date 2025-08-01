@@ -15,8 +15,24 @@ header{
         text-align: center;
      }
 }
-menu{
+
+i#icon{
+    background-color: rgb(34, 33, 33);
+    width: 100vw;
     display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+i#icon:hover{
+    background-color: white;
+    color: black;
+}
+menu{
+    display: none;
     
 
     & ul{
