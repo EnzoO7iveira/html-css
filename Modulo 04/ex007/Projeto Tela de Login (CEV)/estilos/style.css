@@ -99,9 +99,32 @@ form > a.botao:hover{
 
 form > div.campo{
     background-color: #5f2c82;
-    width: 100%;
+    width: 90%;
     height: 40px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top:10px;
+    border:2px solid #f0f6f6;
+}
+div.campo > label{
+    display: none;
+}
+div.campo > span{
+    color: white;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;  
+}
+
+div.campo > input{
+    background-color: #6cd3cf;
+    font-size: 10px;
+    width:calc(100% - 54px);
+    transform: translateY(-15px);
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+
 }
