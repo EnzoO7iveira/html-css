@@ -1,0 +1,14 @@
+header{
+    flex-flow: column nowrap;
+    & nav{
+        flex-flow: column nowrap;
+        & a{
+          width: 80vw;  
+        }
+        
+    }
+    & h1{
+        flex-basis: 50px;
+
+    }
+}
